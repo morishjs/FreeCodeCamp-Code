@@ -18,10 +18,12 @@ var quotes = [
 ];
 
 
-	var color = Math.floor(Math.random() * colors.length);
-	var quote = Math.floor(Math.random() * quotes.length);
-
+	
 	function getQuote(){
+		
+		var color = Math.floor(Math.random() * colors.length);
+		var quote = Math.floor(Math.random() * quotes.length);
+		
 		$('html body').animate({
 			backgroundColor: colors[color],
 			color: colors[color]
@@ -30,10 +32,17 @@ var quotes = [
 		$('#quote-button').animate({
 			backgroundColor : colors[color],
 			color: color[color]},1000);
-			$('#my-quote').text(quotes[quote]);			
+					
+		
+		$('#my-quote').animate({opacity:0},1000,function(){
+			$(this).animate({
+				opacity : 1
+			},1000);
+			$('#my-quote').text(quotes[quote]);	
+		});
 }
 
-$(document).ready(function () {
+$(document).ready(function () {	
 	getQuote();
 	$('#quote-button').on('click',getQuote);
 });
