@@ -1,0 +1,35 @@
+#description-font{
+  font-family: 'Abel', sans-serif;
+    font-size: 18px;
+  text-align : right;
+}
+#my-quote{
+  font-family: 'Abel', sans-serif;
+}
+
+#quote-button{
+  background-color : #9C27B0;
+  float : right;
+  border-color : transparent;
+}
+.center-block{  
+  margin-top : 30px;
+  float: none !important  
+}
+.quotes-text{
+  text-color : "black";
+  text-align: center;
+  font-family: 'Abel', sans-serif;
+  font-size: 30px;
+}
+
+body{
+  background-color : #BA68C8;
+}
+
+.jumbotron
+{
+  background-color: #ffffff;
+  margin-top : 20%;
+}
+
