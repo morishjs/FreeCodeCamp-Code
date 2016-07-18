@@ -1,4 +1,5 @@
 @import url('http://fonts.googleapis.com/css?family=Roboto:400,300,100');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.3.2/css/weather-icons.min.css');
 
 
 p{
@@ -8,7 +9,7 @@ p{
 }
 
 body{
-  background : #000000;
+  background : #FF8F00;
   margin-top : 30px;
 
 }
@@ -18,3 +19,29 @@ body{
   font-size: 40px;
   color: #ffffff;
 }
+#wIcon{
+  font-size : 80px;
+  color: #ffffff;
+
+}
+
+.locInfo{
+  font-family: 'Roboto';
+  font-size: 40px;
+  color: #ffffff;
+
+}
+
+.pMargin{
+  margin-top: 60px;
+}
+.iMargin{
+  margin-left: 50px;
+}
+
+hr{
+    color:#ffffff;
+
+}
+.vertical_line
+{height:150px; width:1px;background:#fff;}
